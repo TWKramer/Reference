@@ -131,4 +131,40 @@ function newGameFunction() {
    
    }
    }
- 
+
+  
+
+
+   function seeCallbackExample() {
+
+    
+
+    selectedseeCallbackExample = true
+    if (selectedseeCallbackExample === true){
+        let callbackHTML = document.getElementById("callbackHTML")
+        callbackHTML.style.display = "block";
+        
+        function getNumber(something) {
+            document.getElementById("number").innerHTML = something;
+          }
+          function calculate(num1, num2, callback) {
+            let math = num1 + num2;
+            callback(math);
+          }
+          
+          calculate(5, 6, getNumber);
+    }
+}
+function formExample(){
+    selectedFormExample = true;
+    if (selectedFormExample === true){
+        let formExample = document.getElementById("formExample")
+        formExample.style.display = "block";
+    }
+}
+
+
+
+
+
+

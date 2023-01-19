@@ -25,16 +25,14 @@
 
                     <div id="nameContainer" style="display:none;">
                         <H1 id="gamePausedAlert1" style="display:none;">PAUSED</H1>
-                        <form id="nameForm1">
-                            <label for="fname">FIRST NAME:</label><br>
-                            <input type="text" id="fname" name="fname"><br>
-                            <label for="lname">LAST NAME:</label><br>
-                            <input type="text" id="lname" name="lname">
-                        </form>
                         <div id="namePageButtons">
                         <button onclick="createPlayerAndBeginFunction()"id="nameMenuStartbtn">Start</button>
                         <button onclick="seeCallbackExample()"id="seeCallbackExampleBTN">Callback</button>
                         <button onclick="quitFunction1()"id="quitbtn1">QUIT</button>
+                        </div>
+                        <div id="listOfExampleButtons">
+                        <button onclick="seeCallbackExample()"id="seeCallbackExampleBTN">Callback</button>
+                        <button onclick="formExample()"id="formExampleBTN">Form</button>
                         </div>
                         <div id="quitMessageBox1" style="display:none;">
                             <div id="quitMessage1" style="display:none;">Are you sure you want to quit and return to the main menu? All progress will be lost...</div>
@@ -59,10 +57,22 @@
                    
 
             </div>
+            <div id="callbackHTML" style="display:none;">
+            <p>Below is an example of a callback.</p>
+            <h1 id="number"></h1>
+        </div>
+        <div id="formExample" style="display: none;">
+        <p>Enter any two numbers and we'll add them together. Exhileration awaits...</p>
+        <form id="mathForm1">
+            <label for="number1">Number 1:</label><br>
+            <input type="number" id="number1" name="number1"><br>
+            <label for="number2">Number 2:</label><br>
+            <input type="number" id="number2" name="number2">
+        </form>
+        <button onclick="callbackAddFunction()"id="callbackAddButton" >Add</button>
+        </div>
+        
 
-            <!--below is test stuff
-            <button onclick="myFunction()">ON/OFF</button>
-            above is test stuff-->
         </body>
 </body>
 </html>
