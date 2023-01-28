@@ -15,7 +15,8 @@
         <body>
             <h1 id="pageTitle"></h1>
             <div id="gameContainer">
- 
+            <div id="buttonContainer">
+            
                     <div id="mainMenuContainer" style="display:block;">
                         <button onclick="newGameFunction()"id="newGamebtn">Begin</button>
                         <button id="loadGamebtn">Load</button>
@@ -32,7 +33,7 @@
                         </div>
                         <div id="listOfExampleButtons">
                         <button onclick="seeCallbackExample()"id="seeCallbackExampleBTN">Callback</button>
-                        <button onclick="formExample()"id="formExampleBTN">Form</button>
+                        <button onclick="formExample()"id="formExampleBTN">Input</button>
                         </div>
                         <div id="quitMessageBox1" style="display:none;">
                             <div id="quitMessage1" style="display:none;">Are you sure you want to quit and return to the main menu? All progress will be lost...</div>
@@ -55,7 +56,7 @@
                             </div>
                     </div>
                    
-
+                </div>
             </div>
             <div id="callbackHTML" style="display:none;">
             <p>Below is an example of a callback.</p>
@@ -69,7 +70,8 @@
             <label for="number2">Number 2:</label><br>
             <input type="number" id="number2" name="number2">
         </form>
-        <button onclick="callbackAddFunction()"id="callbackAddButton" >Add</button>
+        <button onclick="add()">Add</button>
+        <p>Sum = <input id="result"></p>
         </div>
         
 

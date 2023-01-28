@@ -14,6 +14,9 @@
 
 
 }
+#buttonContainer {
+    width: 150px;
+}
 #newGamebtn, #loadGamebtn, #aboutGamebtn, #nameMenuStartbtn{
   color:rgb(0, 0, 0);
   border-color:  rgb(0, 0, 0);
@@ -97,4 +100,18 @@
   font-family: 'Courier New', Courier, monospace; 
   font-weight: bold;
 
+}
+
+#formExampleBTN{
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: inline;
+    cursor: pointer;
+      
+
+}
+
+#listOfExampleButtons{
+    display: inline;
 }

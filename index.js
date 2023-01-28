@@ -163,6 +163,14 @@ function formExample(){
     }
 }
 
+function add()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("number1").value);
+  numTwo = parseInt(document.getElementById("number2").value);
+  sum = numOne + numTwo;
+  document.getElementById("result").value = sum;
+}
 
 
 
